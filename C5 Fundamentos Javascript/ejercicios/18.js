@@ -8,6 +8,18 @@ function esVocal(letra) {
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
   // Tu código:
+
+  if (letra.length === 1) {
+    // Verifica si la letra es una vocal (mayúscula o minúscula)
+    if ("aeiouAEIOU".includes(letra)) {
+      return "Es vocal";
+    } else {
+      return "Dato incorrecto";
+    }
+  } else {
+    return "Dato incorrecto";
+  }
 }
+
 
 module.exports = esVocal;
